@@ -1,6 +1,7 @@
 package com.iswandi.crudmakanan.network;
 
 import com.iswandi.crudmakanan.model.ModelKategori;
+import com.iswandi.crudmakanan.model.ModelMakanan;
 import com.iswandi.crudmakanan.model.ModelUser;
 
 import retrofit2.Call;
@@ -36,5 +37,12 @@ public interface RestAPI {
 
     @GET("ambildataCarikategorimakanan.php/")
     Call<ModelKategori> getkategorimakanan();
+
+    @FormUrlEncoded
+    @POST("getdatamakanan.php/")
+    Call<ModelMakanan> getdatamakanan(
+            @Field("vsiduser") String striduser,
+            @Field("vsidkastrkategorimakanan") String stridkategorimakanan
+    );
 
 }

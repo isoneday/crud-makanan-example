@@ -35,7 +35,7 @@ public class SessionManager extends MyFuction {
         super.onCreate(savedInstanceState);
         //  setContentView(R.layout.activity_main);
         sessionManager = new SessionManager(getApplicationContext());
-        setTheme(R.style.MyAppTheme);
+     //   setTheme(R.style.MyAppTheme);
 
     }
     public SessionManager(){

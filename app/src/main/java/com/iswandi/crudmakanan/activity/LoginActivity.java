@@ -96,6 +96,8 @@ String strusername,strpassword,strlevel;
                         myIntent(MakananActivity.class);
                         finish();
                         sessionManager.createSession(strusername);
+                        String iduser=response.body().getUser().getIdUser();
+                        sessionManager.setIdUser(iduser);
                     }else{
                         myToast(pesan);
                     }
