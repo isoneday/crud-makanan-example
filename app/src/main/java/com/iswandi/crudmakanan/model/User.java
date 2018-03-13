@@ -13,7 +13,8 @@ public class User{
 	private String nama;
 
 	@SerializedName("level")
-	private String level;
+	private String
+			level;
 
 	@SerializedName("jenkel")
 	private String jenkel;
