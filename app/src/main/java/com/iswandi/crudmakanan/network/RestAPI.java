@@ -44,5 +44,9 @@ public interface RestAPI {
             @Field("vsiduser") String striduser,
             @Field("vsidkastrkategorimakanan") String stridkategorimakanan
     );
+    @FormUrlEncoded
+    @POST("deletedatamakanan.php/")
+    Call<ModelMakanan> deletemakanan(
+            @Field("vsidmakanan") String striduser);
 
 }
